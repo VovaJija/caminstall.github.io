@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -7,15 +7,31 @@ body {
 }
 
 header {
-    background: #007bff;
+    background: linear-gradient(to right, #007bff, #0056b3);
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 50px 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 20px;
+}
+
+header .btn {
+    background: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background: #e6e6e6;
 }
 
 nav {
@@ -26,8 +42,9 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -38,6 +55,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .container {
@@ -46,25 +64,42 @@ nav ul li a {
     overflow: hidden;
 }
 
-section {
-    margin: 20px 0;
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-section h2 {
+.card {
     text-align: center;
-    color: #007bff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.features li {
+    margin: 10px 0;
+    font-size: 1.2rem;
 }
 
 .gallery {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
-
-.gallery img {
-    width: 30%;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    margin-top: 20px;
 }
 
 footer {
@@ -73,4 +108,28 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
 }
